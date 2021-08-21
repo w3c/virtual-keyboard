@@ -13,7 +13,7 @@ Details can be found in the [Web Editing Working Group Charter](https://www.w3.o
 * [Clipboard APIs](https://www.w3.org/TR/clipboard-apis/)
 * [Input Events](https://w3c.github.io/input-events/)
 * [Content Editable Disabled](https://w3c.github.io/editing/docs/contentEditableDisabled/)
-* [Virtual Keyboard API](https://w3c.github.io/virtualkeyboard/)
+* [Virtual Keyboard API](https://w3c.github.io/virtual-keyboard/)
 * [EditContextAPI](docs/EditContext/explainer.md)
 
 ## Graduated <sup id="graddedRef">[1](#graddefFootnote)</sup>
