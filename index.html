@@ -166,13 +166,13 @@
                     </ol>
                    </li>
                 </ol>
-               </dd>
                <p class="note">
                 Platform heuristics may impose additional restrictions on VK {{VirtualKeyboard/show()}} and {{VirtualKeyboard/hide()}}. e.g., on Windows the pointer type MUST be touch or pen.
               </p>
               <p class="note">
                 A few people have <a href="https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/415">expressed concerns</a> around {{VirtualKeyboard/show()}} and {{VirtualKeyboard/hide()}} methods not being promise-based, but we believe it is a better design for web developers to use {{VirtualKeyboard/ongeometrychange}} event since it is fired when VK visibility changes, making the return values unnecessary.
               </p>
+            </dd>
             <dt>
               <p>{{VirtualKeyboard/overlaysContent}}</p>
             </dt>
