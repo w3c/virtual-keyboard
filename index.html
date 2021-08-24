@@ -6,8 +6,10 @@
     <script src='https://www.w3.org/Tools/respec/respec-w3c' defer class='remove'></script>
     <script class='remove'>
         var respecConfig = {
-            github: "w3c/virtual-keyboard"
-            ,specStatus:   "ED"
+            github:  {
+              repoURL: "w3c/virtual-keyboard",
+              branch: "main",
+            },specStatus:   "ED"
             ,shortName:    "virtual-keyboard"
             ,editors:      [{ name: "Anupam Snigdha",
                                mailto: "snianu@microsoft.com",
@@ -166,13 +168,13 @@
                     </ol>
                    </li>
                 </ol>
-               </dd>
                <p class="note">
                 Platform heuristics may impose additional restrictions on VK {{VirtualKeyboard/show()}} and {{VirtualKeyboard/hide()}}. e.g., on Windows the pointer type MUST be touch or pen.
               </p>
               <p class="note">
                 A few people have <a href="https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/415">expressed concerns</a> around {{VirtualKeyboard/show()}} and {{VirtualKeyboard/hide()}} methods not being promise-based, but we believe it is a better design for web developers to use {{VirtualKeyboard/ongeometrychange}} event since it is fired when VK visibility changes, making the return values unnecessary.
               </p>
+            </dd>
             <dt>
               <p>{{VirtualKeyboard/overlaysContent}}</p>
             </dt>
@@ -282,22 +284,22 @@
                     <th>Value
                 <tr>
                     <td><dfn>keyboard-inset-top</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
                 <tr>
                     <td><dfn>keyboard-inset-right</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
                 <tr>
                     <td><dfn>keyboard-inset-bottom</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
                 <tr>
                     <td><dfn>keyboard-inset-left</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
                 <tr>
                     <td><dfn>keyboard-inset-width</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
                 <tr>
                     <td><dfn>keyboard-inset-height</dfn>
-                    <td><a href="https://drafts.csswg.org/css-values-3/#length-valuehttps://drafts.csswg.org/css-values-3/#length-value"> length</a>
+                    <td><a href="https://drafts.csswg.org/css-values-3/#length-value"> length</a>
             </table>
 
             <p>The keyboard insets are six <a href="https://drafts.csswg.org/css-env-1/#environment">environment variables</a> that define a rectangle by
